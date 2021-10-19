@@ -188,11 +188,13 @@ nav {
 .social-icons {
   display: none;
 }
+/* ===== Hide Links by Default ===== */
 .links {
-  /* height: 0;
+  height: 0;
   overflow: hidden;
-  transition: var(--transition); */
+  transition: var(--transition);
 }
+/* ===== TOGGLE Class ===== */
 .show-links {
   height: 10rem;
 }
