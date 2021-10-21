@@ -1,13 +1,13 @@
 # Increment/Decrement/Clear button
 
 ## GOALS:
--- Create buttons to increment, decrement, and reset a displayed number<br>
--- Adjust color of the displayed number depending on positive/negative status
+&#8226; Create buttons to increment, decrement, and reset a displayed number<br>
+&#8226; Adjust color of the displayed number depending on positive/negative status
 
 ## CONCEPTS:
--- document.querySelectorAll()<br>
--- forEach()<br>
--- addEventListener()<br>
--- currentTarget property<br>
--- classList<br>
--- textContent
+&#8226; document.querySelectorAll()<br>
+&#8226; forEach()<br>
+&#8226; addEventListener()<br>
+&#8226; currentTarget property<br>
+&#8226; classList<br>
+&#8226; textContent

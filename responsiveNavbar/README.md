@@ -1,11 +1,11 @@
 # Responsive Navigation Bar
 
 ## GOALS:
--- Create a responsive navigation bar (menu)<br>
--- Collapse the navigation bar for smaller screen sizes<br>
--- Implement a hamburger button to open and close the navigation bar on smaller screens
+&#8226; Create a responsive navigation bar (menu)<br>
+&#8226; Collapse the navigation bar for smaller screen sizes<br>
+&#8226; Implement a hamburger button to open and close the navigation bar on smaller screens
 
 ## CONCEPTS:
--- document.querySelector()<br>
--- addEventListener()<br>
--- classList.toggle()
+&#8226; document.querySelector()<br>
+&#8226; addEventListener()<br>
+&#8226; classList.toggle()

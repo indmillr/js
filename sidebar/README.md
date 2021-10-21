@@ -1,11 +1,11 @@
 # Navigation Sidebar
 
 ## GOALS:
--- Create a Side navigation bar<br>
--- Use javascript to toggle the sidebar open and closed<br>
+&#8226; Create a Side navigation bar<br>
+&#8226; Use javascript to toggle the sidebar open and closed<br>
 
 ## CONCEPTS:
--- document.querySelector()<br>
--- addEventListener()<br>
--- classList.toggle()<br>
--- classList.remove()
+&#8226; document.querySelector()<br>
+&#8226; addEventListener()<br>
+&#8226; classList.toggle()<br>
+&#8226; classList.remove()
