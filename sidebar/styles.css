@@ -5,16 +5,11 @@
 
 /* ===== VARIABLES ===== */
 :root {
-  --clr-primary-1: rgb(6, 50, 81);
-  --clr-primary-5: hsl(205, 78%, 60%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-gray: rgb(80, 81, 70);
+  --clr-blue: #01ffe6;
+  --clr-green: #d2e4c4;
+  --clr-yellow: #e4e9b2;
+  --clr-white: #e5e3d7;
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Open Sans', sans-serif;
   --transition: all 0.3s linear;
@@ -33,8 +28,8 @@
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
+  background: var(--clr-white);
+  color: var(--clr-gray);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -68,7 +63,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-gray);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -127,20 +122,20 @@ main {
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-primary-5);
+  color: var(--clr-gray);
   transition: var(--transition);
   cursor: pointer;
   animation: bounce 2s ease-in-out infinite;
 }
 .sidebar-toggle:hover {
-  color: var(--clr-primary-7);
+  color: var(--clr-gray);
 }
 @keyframes bounce {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
@@ -157,13 +152,12 @@ main {
   font-size: 1.75rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-primary-5);
+  color: var(--clr-blue);
   transition: var(--transition);
   cursor: pointer;
-  color: var(--clr-red-dark);
 }
 .close-btn:hover {
-  color: var(--clr-red-light);
+  color: var(--clr-yellow);
   transform: rotate(360deg);
 }
 .logo {
@@ -176,12 +170,12 @@ main {
   font-size: 1.5rem;
   text-transform: capitalize;
   padding: 1rem 1.5rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-white);
   transition: var(--transition);
 }
 .links a:hover {
-  background: var(--clr-primary-8);
-  color: var(--clr-primary-5);
+  background: var(--clr-gray);
+  color: var(--clr-blue);
   padding-left: 1.75rem;
 }
 .social-icons {
@@ -192,11 +186,11 @@ main {
 .social-icons a {
   font-size: 1.5rem;
   margin: 0 0.5rem;
-  color: var(--clr-primary-5);
+  color: var(--clr-blue);
   transition: var(--transition);
 }
 .social-icons a:hover {
-  color: var(--clr-primary-1);
+  color: var(--clr-yellow);
 }
 
 .sidebar {
@@ -205,7 +199,8 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--clr-white);
+  background: var(--clr-gray);
+  color: var(--clr-white);
   display: grid;
   grid-template-rows: auto 1fr auto;
   row-gap: 1rem;

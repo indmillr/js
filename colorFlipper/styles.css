@@ -8,12 +8,12 @@
     --ff-primary: "Roboto", sans-serif;
     --ff-secondary: "Open Sans", sans-serif;
     --clr-black: #222;
-    --clr-grey-1: hsl(209, 61%, 16%);
-    --clr-grey-10: hsl(210, 36%, 96%);
-    --clr-primary-1: hsl(205, 86%, 17%);
-    --clr-primary-5: hsl(205, 78%, 60%);
-    --clr-white: #fff;
-    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --clr-gray: rgb(80, 81, 70);
+    --clr-blue: #01ffe6;
+    --clr-green: #d2e4c4;
+    --clr-yellow: #e4e9b2;
+    --clr-white: #e5e3d7;
+    --shadow: 0 20px 15px rgba(80, 81, 70, 0.3);
     --fixed-width: 620px;
     --radius: 0.25rem;
     --spacing: 0.1rem;
@@ -31,8 +31,8 @@
 
 body {
     font-family: var(--ff-secondary);
-    background: var(--clr-grey-10);
-    color: var(--clr-grey-1);
+    background: var(--clr-white);
+    color: var(--clr-gray);
     line-height: 1.5;
     font-size: 0.875rem;
 }
@@ -99,7 +99,7 @@ nav {
     height: 5rem;
     display: grid;
     align-items: center;
-    box-shadow: var(--dark-shadow);
+    box-shadow: var(--shadow);
 }
 
 .nav-center {

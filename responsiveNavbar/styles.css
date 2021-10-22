@@ -5,19 +5,16 @@
 
 /* ===== VARIABLES ===== */
 :root {
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-5: hsl(205, 78%, 60%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
+  --clr-gray: rgb(80, 81, 70);
+  --clr-blue: #01ffe6;
+  --clr-green: #d2e4c4;
+  --clr-yellow: #e4e9b2;
+  --clr-white: #e5e3d7;
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Open Sans', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow: 0 20px 15px rgba(80, 81, 70, 0.3);
 }
 
 
@@ -32,8 +29,8 @@
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
+  background: var(--clr-white);
+  color: var(--clr-yellow);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -55,8 +52,8 @@ a {
 
 /* ===== NAVIGATION BAR ===== */
 nav {
-  background: var(--clr-white);
-  box-shadow: var(--light-shadow);
+  background: var(--clr-gray);
+  box-shadow: var(--shadow);
 }
 .nav-header {
   display: flex;
@@ -66,21 +63,23 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--clr-primary-5);
+  color: var(--clr-yellow);
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: var(--clr-primary-1);
+  color: var(--clr-blue);
   transform: rotate(90deg);
 }
 .logo {
   height: 40px;
+  width: 100px;
+  border: 1px solid black;
 }
 .links a {
-  color: var(--clr-grey-3);
+  color: var(--clr-yellow);
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -89,8 +88,8 @@ nav {
   transition: var(--transition);
 }
 .links a:hover {
-  background: var(--clr-primary-8);
-  color: var(--clr-primary-5);
+  background: var(--clr-gray);
+  color: var(--clr-blue);
   padding-left: 1.5rem;
 }
 .social-icons {
@@ -135,13 +134,14 @@ nav {
   }
   .social-icons {
     display: flex;
+    font-size: 1.33rem;
   }
   .social-icons a {
     margin: 0 0.5rem;
-    color: var(--clr-primary-5);
+    color: var(--clr-blue);
     transition: var(--transition);
   }
   .social-icons a:hover {
-    color: var(--clr-primary-7);
+    color: var(--clr-yellow);
   }
 }
