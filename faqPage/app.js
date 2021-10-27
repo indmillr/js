@@ -1,4 +1,4 @@
-// Traversing the DOM (Solution 1)
+a// Traversing the DOM (Solution 1)
 // Select element and find Parent elements to identify btn location
 
 // const btns = document.querySelectorAll('.question-btn');
