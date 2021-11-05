@@ -32,9 +32,10 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+// ***** FIXED NAVBAR ***** 
 const navbar = document.getElementById('nav');
 const topLink = document.querySelector('.top-link');
-// ***** FIXED NAVBAR ***** 
+
 window.addEventListener('scroll', function() {
   const scrollHeight = window.pageYOffset;
   const navHeight = navbar.getBoundingClientRect().height;
@@ -45,8 +46,29 @@ window.addEventListener('scroll', function() {
     navbar.classList.remove('fixed-navbar');
   }
 
+  if (scrollHeight > 500) {
+    topLink.classList.add('show-link');
+  } else {
+    topLink.classList.remove('show-link');
+  }
 });
 
 // ***** SMOOTH SCROLL ***** 
-
 // Select Links
+const scrollLinks = document.querySelectorAll('.scroll-link');
+
+scrollLinks.forEach(function (link) {
+  link.addEventListener('click', function (e) {
+// Prevent Default   
+    e.preventDefault();
+// Navigate to specific spot
+    const id = e.currentTarget.getAttribute('href').slice(1);
+    const element = document.getElementById(id);
+    let position = element.offsetTop;
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
+    linksContainer.style.height = 0;
+  });
+});
