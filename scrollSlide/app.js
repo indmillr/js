@@ -11,6 +11,8 @@ original string */
 element, in pixels. */
 
 // ***** SET THE DATE ***** 
+const date = document.getElementById('date');
+date.innerHTML = new Date().getFullYear();
 
 // ***** CLOSE LINKS ***** 
 
