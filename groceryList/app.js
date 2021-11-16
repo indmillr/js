@@ -41,6 +41,11 @@ function addItem(e) {
         <i class="fas fa-trash"></i>
       </button>
     </div>`;
+    const deleteBtn = element.querySelector(".delete-btn");
+    const editBtn = element.querySelector(".edit-btn");
+    deleteBtn.addEventListener("click", deleteItem);
+    editBtn.addEventListener("click", editItem);
+
     // append Child
     list.appendChild(element);
     // display Alert
@@ -79,9 +84,26 @@ function clearItems() {
   }
   container.classList.remove("show-container");
   displayAlert("empty list", "danger");
-  // localStorage.removeItem('list');
   setBackToDefault();
+  // localStorage.removeItem('list');
 }
+// delete function
+function deleteItem(e) {
+  const element = e.currentTarget.parentElement.parentElement;
+  list.removeChild(element);
+  if (list.children.length === 0) {
+    container.classList.remove("show-container");
+  }
+  displayAlert("item removed", "danger");
+  setBackToDefault();
+  // remove from local storage
+  removeFromLocalStorage(id);
+}
+// edit function
+function editItem() {
+  console.log("edit item");
+}
+
 // set back to default
 function setBackToDefault() {
   grocery.value = "";
