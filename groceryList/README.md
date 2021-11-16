@@ -4,6 +4,7 @@
 
 &#8226; Allow user to add grocery items to a list<br>
 &#8226; Allow items to be removed from the list<br>
+&#8226; Allow user to edit items<br>
 &#8226; Allow entire list to be cleared
 
 ## CONCEPTS:
