@@ -14,3 +14,5 @@
 &#8226; play()<br>
 &#8226; Math.floor()<br>
 &#8226; Math.random
+
+## HTML and CSS are prebuilt project files. JS written following a Beau Carnes tutorial.
